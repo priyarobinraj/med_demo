@@ -218,7 +218,7 @@ const Patient: React.FC = () => {
             </CardHeader>
 
             <CardContent>
-              <Calendar
+              {/* <Calendar
                 mode="single"
                 selected={selectedDate}
                 onSelect={(date) => date && setSelectedDate(date)}
@@ -226,31 +226,8 @@ const Patient: React.FC = () => {
                 modifiersClassNames={{
                   selected: "bg-blue-600 text-white hover:bg-blue-700",
                 }}
-                components={{
-                  Day: (props: any) => {
-                    const date = props.date as Date;
-                    const dateStr = format(date, "yyyy-MM-dd");
-                    const isTaken = takenDates.has(dateStr);
-                    const isPast = isBefore(date, startOfDay(today));
-                    const isCurrentDay = isToday(date);
-
-                    return (
-                      <div className="relative w-full h-full flex items-center justify-center">
-                        <span>{date.getDate()}</span>
-                        {isTaken && (
-                          <div className="absolute -top-1 -right-1 w-4 h-4 bg-green-500 rounded-full flex items-center justify-center">
-                            <Check className="w-2 h-2 text-white" />
-                          </div>
-                        )}
-                        {!isTaken && isPast && !isCurrentDay && (
-                          <div className="absolute -top-1 -right-1 w-4 h-4 bg-red-400 rounded-full"></div>
-                        )}
-                      </div>
-                    );
-                  },
-                }}
-              />
-              {/* <Calendar
+              /> */}
+              <Calendar
                 mode="single"
                 selected={selectedDate}
                 onSelect={(date) => date && setSelectedDate(date)}
@@ -267,7 +244,7 @@ const Patient: React.FC = () => {
                   missed: "bg-red-400 text-white m-1",
                   today: "ring-2 ring-blue-500 m-1",
                 }}
-              /> */}
+              />
 
               <div className="mt-4 space-y-2 text-sm">
                 <div className="flex items-center gap-2">

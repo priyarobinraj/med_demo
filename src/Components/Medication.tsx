@@ -283,7 +283,7 @@ const Medication: React.FC = () => {
             <CardContent>
               <div className="grid lg:grid-cols-2 gap-6">
                 <div>
-                  {"use client"} {/* Ensure client-side rendering */}
+                  {"use client"}
                   <Calendar
                     mode="single"
                     selected={selectedDate}
