@@ -1,58 +1,50 @@
-<<<<<<< HEAD
-# med_demo
-=======
-# React + TypeScript + Vite
+Medicake Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo : https://med-demo-two.vercel.app/
 
-Currently, two official plugins are available:
+A responsive Medication Tracker built using **React + TypeScript**, designed to help patients and caretakers track medication schedules, monitor adherence, and provide photo proof.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features:-
 
-## Expanding the ESLint configuration
+- **Mark Medication as Taken** with optional photo proof
+- **Calendar** showing taken and missed days
+- **Track Daily Streaks** and Monthly Adherence
+- **Add / Update / Delete Medications**
+- **Upload Proof Photo** via camera or gallery
+- **Personalized Dashboard** with greeting and stats
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Technical Features:-
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React** with **TypeScript**
+- **Tailwind CSS** for styling
+- **ShadCN UI** components
+- **Lucide Icons**
+- **Date-fns** for date formatting and calendar logic
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+UI Preview:-
+A modern, clean interface that adapts for patients and caretakers.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Day streak counter
+- Today's medication checklist
+- Calendar view
+- Add, edit, and delete medications easily
+- Upload photo proof for accountability
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
->>>>>>> 78b6a73 (hi)
+Login Instructions:-
+You can log in using **any username and password** — no authentication or validation is required for now.  
+This is for testing/demo purposes only, so you can explore the app easily without credentials.
+
+Folder Structure:-
+src/
+├── components/
+│ ├── home.tsx
+│ ├── login.tsx
+│ ├── medication.tsx
+│ ├── medicationtracker.tsx
+│ ├── notificationsettings.tsx
+│ └── patient.tsx
+├── pages/
+│ ├── index.tsx
+│ └── notfoundpage.tsx
+├── App.tsx
+└── Main.tsx
